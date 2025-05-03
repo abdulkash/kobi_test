@@ -1,16 +1,40 @@
-# kobi_test
+# Transaction Activity UI Demo
 
-A new Flutter project.
+A flutter project demonstrating a transaction acitvity page also showing filters too for various available transaction status
 
-## Getting Started
+## Structure
 
-This project is a starting point for a Flutter application.
+```
+.
+`-- kobi_test/
+    |-- core/
+    |   `-- utils/
+    |       |-- colors.dart
+    |       |-- currency_formatter.dart
+    |       |-- hex_color.dart
+    |       `-- theme.dart
+    `-- lib/
+        |-- core
+        |-- src/
+        |   |-- controller/
+        |   |   `-- transaction_provider.dart
+        |   |-- model/
+        |   |   |-- enum/
+        |   |   |   `-- status.dart
+        |   |   `-- transaction_model.dart
+        |   `-- view/
+        |       |-- pages/
+        |       |   `-- transaction_page.dart
+        |       `-- widgets/
+        |           |-- bottom_sheet_widget.dart
+        |           `-- filter_widget.dart
+        `-- main.dart
+```
 
-A few resources to get you started if this is your first Flutter project:
+## State Management
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Riverpod was used for state management for both filters & transactions provider
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Demonstration
+
+![Description of GIF](recording.gif)
